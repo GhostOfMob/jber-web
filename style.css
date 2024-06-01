@@ -27,7 +27,7 @@
     font-size: 18px;
     transition: 0.2s ease;
   }
-  nav .mainMenu li a:hover {
+  nav .mainMenu li a: hover {
     background: rgb(210, 9, 9);
   }
   nav .openMenu {
@@ -71,7 +71,7 @@
     nav .openMenu {
       display: block;
     }
-    nav .mainMenu li a:hover {
+    nav .mainMenu li a: hover {
       background: none;
       color: rgb(210, 9, 9);
     }
@@ -82,6 +82,6 @@
   }
 
   #jbplace {
-    width: 85rem;
-    height: 36rem;
+    width: 86rem;
+    height: 37rem;
   }
