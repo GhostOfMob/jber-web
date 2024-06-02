@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.register_form {
+    font-family: Arial, sans-serif;
+    background-color: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="email"], input[type="password"], .input-container select {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #005f75;
+}
+
+span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+span a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+span a:hover {
+    text-decoration: underline;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}

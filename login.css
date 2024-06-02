@@ -1,0 +1,87 @@
+.log_form {
+  font-family: Arial, sans-serif;
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 800px;
+  max-width: 100%;
+  min-height: 480px;
+  display: flex;
+}
+
+.form-container {
+  padding: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+input {
+  background: #eee;
+  border: none;
+  padding: 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+button {
+  border: none;
+  padding: 15px 20px;
+  background-color: #008CBA;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #005f75;
+}
+
+#forgot {
+  margin-top: 20px;
+}
+span {
+  margin-top: 20px;
+}
+
+a {
+  color: #008CBA;
+  text-decoration: none;
+}
+
+.form-container  {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
