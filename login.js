@@ -1,26 +1,40 @@
-document.getElementById('showRegister').addEventListener('click', function () {
-    document.querySelector('.log-in-container').style.display = 'none';
-    document.querySelector('.register-container').style.display = 'flex';
-});
+function validateForm() {
+    let email = document.getElementById('loginEmail').value;
+    let password = document.getElementById('loginPassword').value;
 
-document.getElementById('showLogin').addEventListener('click', function () {
-    document.querySelector('.register-container').style.display = 'none';
-    document.querySelector('.log-in-container').style.display = 'flex';
-});
+    let emailError = document.getElementById('emailErrors');
+    let passwordError = document.getElementById('passwordErrors');
 
-document.getElementById('loginForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
-    // Handle login logic here
-    alert(`Logged in with email: ${email}`);
-});
+    let isValid = true;
 
-document.getElementById('registerForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = document.getElementById('registerName').value;
-    const email = document.getElementById('registerEmail').value;
-    const password = document.getElementById('registerPassword').value;
-    // Handle registration logic here
-    alert(`Registered with email: ${email}`);
-});
+    emailError.innerHTML = "";
+    passwordError.innerHTML = "";
+    document.getElementById('alert').style.display = 'none';
+
+    // need to Validate if user use real email format
+    if (email.trim() === "") {
+        emailError.innerHTML = "Email must be filled out";
+        isValid = false;
+    } else if (!validateEmail(email)) {
+        emailError.innerHTML = "Please enter a valid email address";
+        isValid = false;
+    }
+
+    // Validate the password
+    if (password.trim() === "") {
+        passwordError.innerHTML = "Password must be filled out";
+        isValid = false;
+    }
+
+    if (!isValid) {
+        document.getElementById('alert').style.display = 'block';
+    }
+
+    return isValid;
+}
+
+function validateEmail(email) {
+    // email @ para maverify kung email ang gamit
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
