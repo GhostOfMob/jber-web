@@ -1,6 +1,21 @@
+.alertbox {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
 .log_form {
   font-family: Arial, sans-serif;
-  background: #f6f5f7;
+  background: linear-gradient(135deg, black, gold, black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +35,7 @@
 }
 
 .form-container {
+  background-color: rgb(255, 255, 255);;
   padding: 50px;
   display: none;
   flex-direction: column;
@@ -43,6 +59,11 @@ h1 {
   margin: 0;
 }
 
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
 input {
   background: #eee;
   border: none;
@@ -53,6 +74,7 @@ input {
 
 button {
   border: none;
+  border-radius: 5px;
   padding: 15px 20px;
   background-color: #008CBA;
   color: white;
