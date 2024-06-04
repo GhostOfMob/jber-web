@@ -46,8 +46,25 @@ input, select {
     border-radius: 5px;
 }
 
+#passwordStrength {
+    margin-bottom: 5px;
+    color: red;
+    display: none;
+}
+
 input[type="email"], input[type="password"], .input-container select {
     width: 100%;
+}
+
+.error {
+    color: red;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+#birthMonth, #birthDay, #birthYear {
+    margin: 5px;
+    padding: 10px;
 }
 
 button {
