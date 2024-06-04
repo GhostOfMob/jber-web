@@ -3,10 +3,12 @@
     margin: 0px;
     padding: 0px;
   }
+
   body {
     font-family: Arial, sans-serif;
   }
-  nav {
+
+nav {
     height: 6rem;
     background: rgb(128, 128, 128);
     color: rgb(255, 255, 255);
@@ -14,11 +16,13 @@
     align-items: center;
     justify-content: space-between;
   }
-  nav .mainMenu {
+
+nav .mainMenu {
     display: flex;
     list-style: none;
   }
-  nav .mainMenu li a {
+
+nav .mainMenu li a {
     display: inline-block;
     padding: 15px;
     text-decoration: none;
@@ -27,28 +31,31 @@
     font-size: 18px;
     transition: 0.2s ease;
   }
-  nav .mainMenu li a:hover {
+
+nav .mainMenu li a:hover {
     background: rgb(210, 9, 9);
   }
-  nav .openMenu {
+
+nav .openMenu {
     font-size: 2rem;
     margin: 20px;
     display: none;
     cursor: pointer;
   }
-  nav .mainMenu .closeMenu {
+
+nav .mainMenu .closeMenu {
     font-size: 2rem;
     display: none;
     cursor: pointer;
   }
 
-  nav .logo {
+nav .logo {
     margin: 1.5rem;
     cursor: pointer;
     text-transform: uppercase;
   }
 
-  nav .logo:hover {
+nav .logo:hover {
     transform: scale(1.1);
     transition: 0.4s ease-in-out;
   }
@@ -87,7 +94,7 @@
     }
   }
 
-  #jbplace {
-    width: 86rem;
-    height: 37rem;
+#jbplace {
+    width: 100%;
+    height: 100%;
   }
