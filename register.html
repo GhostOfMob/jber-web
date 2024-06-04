@@ -20,26 +20,33 @@
                 <form id="registerForm">
                     <h1>Create a new account</h1>
                     <div class="input-container">
-                        <input type="text" placeholder="First name" id="firstName" required />
-                        <input type="text" placeholder="Last name" id="lastName" required />
+                        <span id="firstNameError" class="error"></span><br>
+                        <input type="text" placeholder="First name" id="firstName">
+                        <span id="lastNameError" class="error"></span><br><br>
+                        <input type="text" placeholder="Last name" id="lastName">
                     </div>
-                    <input type="email" placeholder="Mobile number or email" id="registerEmail" required />
-                    <input type="password" placeholder="New password" id="registerPassword" required />
+                    <span id="emailError" class="error"></span>
+                    <input type="email" placeholder="Email" id="registerEmail">
+                    <div id="passwordStrength">Password Strength: <span id="strengthText"></span></div>
+                    <span id="passwordError" class="error"></span>
+                    <input type="password" placeholder="Password" id="registerPassword">
+                    <span id="rePasswordError" class="error"></span>
+                    <input type="password" placeholder="Repeat Password" id="re_Password">
                     <div class="input-container">
                         <label>Birthday</label>
                         <select id="birthMonth">
-                            <option value="Jan">Jan</option>
-                            <option value="Feb">Feb</option>
-                            <option value="Mar">Mar</option>
-                            <option value="Apr">Apr</option>
+                            <option value="January">Jan</option>
+                            <option value="Febuary">Feb</option>
+                            <option value="March">Mar</option>
+                            <option value="April">Apr</option>
                             <option value="May">May</option>
-                            <option value="Jun">Jun</option>
-                            <option value="Jul">Jul</option>
-                            <option value="Aug">Aug</option>
-                            <option value="Sep">Sep</option>
-                            <option value="Oct">Oct</option>
-                            <option value="Nov">Nov</option>
-                            <option value="Dec">Dec</option>
+                            <option value="June">Jun</option>
+                            <option value="July">Jul</option>
+                            <option value="August">Aug</option>
+                            <option value="September">Sep</option>
+                            <option value="October">Oct</option>
+                            <option value="November">Nov</option>
+                            <option value="December">Dec</option>
                         </select>
                         <select id="birthDay">
                             <option value="1">1</option>
@@ -141,11 +148,13 @@
                             <option value="1961">1961</option>
                             <option value="1960">1960</option>
                         </select>
+                        <span id="birthdayError" class="error"></span>
                     </div>
                     <div class="input-container">
                         <label>Gender</label>
-                        <label><input type="radio" name="gender" value="female" required /> Female</label>
-                        <label><input type="radio" name="gender" value="male" required /> Male</label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <span id="genderError" class="error"></span>
                     </div>
                     <button type="submit">Sign Up</button>
                     <span>Already have an account? <a href="login.html" id="showLogin">Log In</a></span>
@@ -153,8 +162,8 @@
             </div>
         </div>
     </div>
-
+                    
     <script src="./nav.js"></script>
-    <script src="./register.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>
