@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="./nav.css">
     <link rel="icon" href="logo.png" type="icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+   integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
     <nav>
@@ -21,19 +22,36 @@
         </ul>
     </nav>
 
+    <div class="alertbox">
+        <p id="alert"></p>
+    </div>
+
     <div class="log_form">
         <div class="container">
             <div class="form-container">
-                <form id="loginForm">
+                <form id="loginForm" onsubmit="return validateForm()">
                     <h1>Log In</h1>
-                    <input type="email" placeholder="Email" id="loginEmail" required />
-                    <input type="password" placeholder="Password" id="loginPassword" required />
+
+                    <label for="loginEmail"></label>
+                    <span id="emailErrors" class="error"></span>
+                    <input type="text" placeholder="Email" id="loginEmail" name="loginEmail">
+
+                    <label for="loginPassword"></label>
+                    <span id="passwordErrors" class="error"></span>
+                    <input type="password" placeholder="Password" id="loginPassword" name="loginPassword">
+
                     <button type="submit">Log In</button>
-                    <a href="#" id="forgot">forgot password</a>
+
+                    <a href="#" id="forgot">forgot password?</a>
+
                     <span>Don't have an account? <a href="register.html" id="showRegister">Register</a></span>
                 </form>
             </div>
         </div>
+    </div>
+
+    <div class="alertbox" id="alert">
+        Please correct the errors above.
     </div>
 
     <script src="./nav.js"></script>
