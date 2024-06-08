@@ -1,16 +1,15 @@
-* {
-    box-sizing: border-box;
+body {
+    background: #75A47F;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .register_form {
-    font-family: Arial, sans-serif;
-    background-color: #f6f5f7;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 80vh;
+    padding: 20px;
 }
 
 .container {
@@ -18,13 +17,23 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 400px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
-h1 {
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#create {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -56,10 +65,14 @@ input[type="email"], input[type="password"], .input-container select {
     width: 100%;
 }
 
+#re_Password {
+    margin-bottom: 20px;
+}
+
 .error {
     color: red;
     margin-bottom: 5px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #birthMonth, #birthDay, #birthYear {
@@ -104,4 +117,18 @@ label {
 
 input[type="radio"] {
     margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    form {
+        padding: 0 10px;
+    }
 }
