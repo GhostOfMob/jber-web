@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #75A47F;
+    overflow: hidden;
+}
+
+nav .logo {
+    margin: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+.main_content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FDFFE2;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.main_content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px;
+}
+
+.main_content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    margin-bottom: 10px;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main_content button:hover {
+    background-color: #5A72A0;
+}
+
+.main_content .guest_btn .register_btn {
+    margin-top: 10px;
+    background-color: #42b72a;
+}
+
+.get_started {
+    padding: 10px 20px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.get_started:hover {
+    background-color: #155cb0;
+}
+
+.footer {
+    background-color: #BACD92;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #FCFFE0;
+    font-size: 10px;
+}
