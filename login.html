@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="./nav.css">
     <link rel="icon" href="logo.png" type="icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-   integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" 
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" 
+    crossorigin="anonymous"/>
+    
 </head>
 <body>
     <nav>
-        <div class="logo"><h1><span style="color:red;">jber </span>auto repair</h1></div>
-        <div class="openMenu"><i class="fa fa-bars"></i></div>
-        <ul class="mainMenu">
-            <li><a href="index.html">Get Started</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-            <div class="closeMenu"><i class="fa fa-times"></i></div>
-        </ul>
+        <div class="logo">
+            <h1>
+                <span style="color:red;">jber 
+                </span>auto repair
+            </h1>
+        </div>
+
     </nav>
 
     <div class="alertbox">
@@ -30,31 +32,47 @@
         <div class="container">
             <div class="form-container">
                 <form id="loginForm" onsubmit="return validateForm()">
-                    <h1>Log In</h1>
+                    <h1 id="log">Log In</h1>
 
                     <label for="loginEmail"></label>
-                    <span id="emailErrors" class="error"></span>
-                    <input type="text" placeholder="Email" id="loginEmail" name="loginEmail">
+                    <span 
+                    id="emailErrors" 
+                    class="error"></span>
+                    
+                    <input
+                    type="text" 
+                    placeholder="Email" 
+                    id="loginEmail" 
+                    name="loginEmail" 
+                    autocomplete="off">
 
                     <label for="loginPassword"></label>
-                    <span id="passwordErrors" class="error"></span>
-                    <input type="password" placeholder="Password" id="loginPassword" name="loginPassword">
+
+                    <span id="passwordErrors" 
+                    class="error"></span>
+
+                    <input type="password" 
+                    placeholder="Password" 
+                    id="loginPassword" 
+                    name="loginPassword" 
+                    autocomplete="off">
 
                     <button type="submit">Log In</button>
 
-                    <a href="#" id="forgot">forgot password?</a>
+                    <a href="forgot.html" id="forgot">forgot password?</a>
 
-                    <span>Don't have an account? <a href="register.html" id="showRegister">Register</a></span>
+                    <span>Don't have an account? 
+                        <a href="register.html" 
+                        id="showRegister">Register</a>
+                    </span>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="alertbox" id="alert">
-        Please correct the errors above.
-    </div>
 
     <script src="./nav.js"></script>
     <script src="./login.js"></script>
+    <script src="blacklisting.js"></script>
 </body>
 </html>
