@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jber</title>
-    <link rel="stylesheet" href="./nav.css">
+
+
+    <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="logo.png" type="icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" 
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" 
+    crossorigin="anonymous" />
+
 </head>
-<body style="overflow: hidden;">
-        <nav>
-            <div class="logo"><h1><span style="color:red;">jber </span>auto repair</h1></div>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
-            <ul class="mainMenu">
-                <li><a href="login.html">Log-in</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <div class="closeMenu"><i class="fa fa-times"></i></div>
-            </ul>
-        </nav>
-
-        <div>
-            <img src="jberplace.png" id="jbplace">
+<body>
+    <nav>
+        <div class="logo">
+            <h1><span style="color:red;">jber</span> auto repair</h1>
         </div>
+    </nav>
 
-    <script src="./nav.js"></script>
+    <button class="get_started">Get Started</button>
+
+    <div class="main_content">
+        <input type="text" placeholder="Email" id="loginEmail" name="loginEmail" autocomplete="off">
+        <input type="password" placeholder="Password" id="loginPassword" name="loginPassword" autocomplete="off">
+        <button type="submit">Log In</button>
+        <a href="forgot_password.html">Forgot password?</a>
+        <hr>
+        <button id="register_btn" class="register_btn">Create new account</button>
+        <button id="guest_btn" class="guest_btn">Continue as Guest</button>
+    </div>
+
+    <div class="footer">
+        <h1>@Capstone Project 2024 to 2025</h1>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
