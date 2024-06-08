@@ -10,8 +10,8 @@
 
 nav {
     height: 6rem;
-    background: rgb(128, 128, 128);
-    color: rgb(255, 255, 255);
+    background: #F5DAD2;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,7 @@ nav .mainMenu li a {
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     transition: 0.2s ease;
   }
@@ -55,6 +55,14 @@ nav .logo {
     text-transform: uppercase;
   }
 
+  nav .logo a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
 nav .logo:hover {
     transform: scale(1.1);
     transition: 0.4s ease-in-out;
@@ -71,7 +79,7 @@ nav .logo:hover {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: rgb(0, 0, 0);
+      background: #BACD92;
       transition: top 1s ease 0s;
       display: none;
     }
@@ -94,7 +102,3 @@ nav .logo:hover {
     }
   }
 
-#jbplace {
-    width: 100%;
-    height: 100%;
-  }
