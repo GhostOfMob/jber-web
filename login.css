@@ -1,3 +1,9 @@
+body {
+  background: #75A47F;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .alertbox {
   display: none;
   position: absolute;
@@ -14,13 +20,16 @@
 }
 
 .log_form {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, black, gold, black);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  width: 80%; 
+  max-width: 800px;
+  min-width: 300px;
+  height: auto;
+  margin: 5% auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -28,14 +37,14 @@
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 800px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 800px;
   min-height: 480px;
   display: flex;
+  flex-direction: column;
 }
 
 .form-container {
-  background-color: rgb(255, 255, 255);;
   padding: 50px;
   display: none;
   flex-direction: column;
@@ -45,18 +54,18 @@
 }
 
 form {
-  background: #fff;
   display: flex;
   flex-direction: column;
   padding: 0 50px;
-  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
   justify-content: center;
   text-align: center;
 }
 
-h1 {
+#log {
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .error {
@@ -70,6 +79,7 @@ input {
   padding: 15px;
   margin: 8px 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 button {
@@ -86,10 +96,7 @@ button:hover {
   background-color: #005f75;
 }
 
-#forgot {
-  margin-top: 20px;
-}
-span {
+#forgot, span {
   margin-top: 20px;
 }
 
@@ -98,12 +105,25 @@ a {
   text-decoration: none;
 }
 
-.form-container  {
+.form-container {
   display: flex;
 }
 
 @media (max-width: 768px) {
+  .log_form {
+    width: 90%;
+    padding: 10px;
+  }
+
   .container {
-      flex-direction: column;
+    padding: 20px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  form {
+    padding: 0 20px;
   }
 }
