@@ -7,33 +7,92 @@
     <link rel="stylesheet" href="./register.css">
     <link rel="stylesheet" href="./nav.css">
     <link rel="icon" href="logo.png" type="icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" 
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" 
+    crossorigin="anonymous"/>
+
 </head>
 <body>
     <nav>
-        <div class="logo"><h1><span style="color:red;">jber </span>auto repair</h1></div>
+        <div class="logo">
+            <h1>
+                <span style="color:red;">jber 
+                </span>auto repair
+            </h1>
+        </div>
     </nav>
 
     <div class="register_form">
         <div class="container">
             <div class="form-container">
                 <form id="registerForm">
-                    <h1>Create a new account</h1>
+
+                    <h1 id="create">Create a new account</h1>
+
                     <div class="input-container">
-                        <span id="firstNameError" class="error"></span><br>
-                        <input type="text" placeholder="First name" id="firstName">
-                        <span id="lastNameError" class="error"></span><br><br>
-                        <input type="text" placeholder="Last name" id="lastName">
+
+                        <span 
+                            id="firstNameError" 
+                            class="error">
+                        </span>
+
+                        <input 
+                            type="text" 
+                            placeholder="First name" 
+                            id="firstName" 
+                            autocomplete="off">
+
+                        <span 
+                            id="lastNameError" 
+                            class="error">
+                        </span>
+
+                        <input 
+                            type="text" 
+                            placeholder="Last name" 
+                            id="lastName" 
+                            autocomplete="off">
+
                     </div>
+
                     <span id="emailError" class="error"></span>
-                    <input type="email" placeholder="Email" id="registerEmail">
-                    <div id="passwordStrength">Password Strength: <span id="strengthText"></span></div>
-                    <span id="passwordError" class="error"></span>
-                    <input type="password" placeholder="Password" id="registerPassword">
-                    <span id="rePasswordError" class="error"></span>
-                    <input type="password" placeholder="Repeat Password" id="re_Password">
+
+                    <input 
+                        type="email" 
+                        placeholder="Email" 
+                        id="registerEmail" 
+                        autocomplete="off">
+
+                    <div id="passwordStrength">
+                        Password Strength: 
+                        <span id="strengthText"></span>
+                    </div>
+
+                    <span 
+                        id="passwordError" 
+                        class="error">
+                    </span>
+
+                    <input 
+                        type="password" 
+                        placeholder="Password" 
+                        id="registerPassword">
+
+                    <span 
+                        id="rePasswordError" 
+                        class="error">
+                    </span>
+
+                    <input 
+                        type="password" 
+                        placeholder="Repeat Password" 
+                        id="re_Password">
+
                     <div class="input-container">
-                        <label>Birthday</label>
+
+                        <label>Birthday:</label>
+
                         <select id="birthMonth">
                             <option value="January">Jan</option>
                             <option value="Febuary">Feb</option>
@@ -48,6 +107,7 @@
                             <option value="November">Nov</option>
                             <option value="December">Dec</option>
                         </select>
+
                         <select id="birthDay">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -81,25 +141,8 @@
                             <option value="30">30</option>
                             <option value="31">31</option>
                         </select>
+
                         <select id="birthYear">
-                            <option value="2024">2024</option>
-                            <option value="2023">2023</option>
-                            <option value="2022">2022</option>
-                            <option value="2021">2021</option>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
-                            <option value="2011">2011</option>
-                            <option value="2010">2010</option>
-                            <option value="2009">2009</option>
-                            <option value="2008">2008</option>
-                            <option value="2007">2007</option>
                             <option value="2006">2006</option>
                             <option value="2005">2005</option>
                             <option value="2004">2004</option>
@@ -148,16 +191,41 @@
                             <option value="1961">1961</option>
                             <option value="1960">1960</option>
                         </select>
-                        <span id="birthdayError" class="error"></span>
+
+                        <span 
+                            id="birthdayError" 
+                            class="error">
+                        </span>
+
                     </div>
+
                     <div class="input-container">
-                        <label>Gender</label>
-                        <label><input type="radio" name="gender" value="male"> Male</label>
-                        <label><input type="radio" name="gender" value="female"> Female</label>
-                        <span id="genderError" class="error"></span>
+
+                        <label>Gender:</label>
+
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="gender" 
+                            value="male">Male
+                        </label>
+
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="gender" 
+                            value="female">Female
+                        </label>
+
+                        <span 
+                            id="genderError" 
+                            class="error">
+                        </span>
                     </div>
                     <button type="submit">Sign Up</button>
+
                     <span>Already have an account? <a href="login.html" id="showLogin">Log In</a></span>
+
                 </form>
             </div>
         </div>
@@ -165,5 +233,6 @@
                     
     <script src="./nav.js"></script>
     <script src="register.js"></script>
+        <script src="blacklisting.js"></script>
 </body>
 </html>
